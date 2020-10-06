@@ -35,9 +35,6 @@ def on_closing():
 def volume(var):
     pygame.mixer.music.set_volume(volume_slider.get())
 
-def nothing():
-    pass
-
 def add_a_song():
     selected_song = filedialog.askopenfilename(title="Select a song", filetypes=(("mp3 files", "*.mp3"),))
     if selected_song:
